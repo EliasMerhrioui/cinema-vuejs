@@ -1,0 +1,33 @@
+header p{
+	font-size: 2rem;
+	font-weight: 100;
+	letter-spacing: 0.01rem;
+	text-transform: uppercase;
+	margin: 0.2rem;
+	padding: 0rem;
+}
+
+nav{
+	margin-bottom: 2rem;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0rem;
+	padding: 0rem;
+}
+
+.flex-container li:not(:last-child){
+	margin-right: 0.5rem;
+}
+
+header, 
+footer{
+    padding: 2rem;
+}
+
+main{
+    padding: 0rem 2rem;
+}
