@@ -5,7 +5,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint", 
+    "scss-compile": "sass Bulma_DWS/assets/css/main.scss:src/assets/css/main.css",
+    "scss-watch": "sass --watch Bulma_DWS/assets/css/main.scss:src/assets/css/main.css"
+  
   },
   "dependencies": {
     "core-js": "^3.8.3",

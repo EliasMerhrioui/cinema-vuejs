@@ -2,7 +2,7 @@
 	<div>
 		<!-- Display child component -->
 		<HeaderMain />
-
+		
 		<main>
 			<!-- User router-view directive -->
 			<router-view
@@ -26,9 +26,7 @@
 	*/
 		// App components
 		import HeaderMain from './components/main/HeaderMain.vue';
-
-	//
-
+	
 	/*
 		[VUE] Component
 		Define properties and methods => https://fr.vuejs.org/v2/guide/components.html
@@ -42,7 +40,7 @@
 				Used to inject child components
 			*/
 				components: {
-					HeaderMain,
+					HeaderMain
 				},
 			//
 

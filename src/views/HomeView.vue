@@ -2,7 +2,8 @@
 	<div 
 		class="home-view-component"
 	>
-	<h1>TERE</h1>
+	<PresentationHome />
+	<GrilleFilmHome />
 	</div>
 </template>
 
@@ -10,6 +11,8 @@
 	/* eslint-disable no-console */
 	/* eslint-disable no-unused-vars */
 	/* eslint-disable no-mixed-spaces-and-tabs */
+	import GrilleFilmHome from '@/components/home/GrilleFilmHome.vue';
+	import PresentationHome from '@/components/home/PresentationHome.vue';
 	
 
 	/* 
@@ -29,7 +32,7 @@
 				[VUE] Components => https://bit.ly/3GdqmXg
 				Used to inject children components
 			*/
-				components: {  },
+				components: {PresentationHome, GrilleFilmHome  },
 			//
 
 			/*

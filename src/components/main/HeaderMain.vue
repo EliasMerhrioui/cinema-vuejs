@@ -2,6 +2,9 @@
 	<header 
 		class="header-main-component"
 	>
+		<img src="@/assets/affFilm/logoSite.png" alt="">
+		<h1>Film, séries TV et bien plus en illimité.</h1>
+		
         <nav>
             <ul class="flex-container">
                 <li>
