@@ -17,15 +17,21 @@
             component: () => import('../views/HomeView.vue'),
         },
         {
-            path: '/:type/:id',
-            name: 'SingleView',
-            component: () => import('../views/SingleView.vue'),
+            path: '/auth',
+            name: 'LoginView',
+            component: () => import('../views/LoginView.vue'),
         },
         {
-            path: '/create',
-            name: 'CreateView',
+            path: '/fav',
+            name: 'FavorisView',
             authGuard: true,
-            component: () => import('../views/CreateView.vue'),
+            component: () => import('../views/FavorisView.vue'),
+        },
+        {
+            path: '/search/:name',
+            name: 'SearchView',
+            authGuard: true,
+            component: () => import('../views/SearchView.vue'),
         }
     ];
 //

@@ -1,10 +1,10 @@
 <template>
 	<div 
-		class="create-view-component"
+		class="single-view-component"
 	>
-		<p>create-view-component</p>
+		<p>FAVORIS VIEW</p>
+		{{ cmpRouteParams }}
 		<ImageBase />
-		<FormBase />
 	</div>
 </template>
 
@@ -18,7 +18,6 @@
 		Define main imports to create the application
 	*/
     	import ImageBase from '../components/base/ImageBase.vue';
-		import FormBase from "../components/base/FormBase.vue";
 	//
 
 	/*
@@ -27,13 +26,13 @@
 	*/
 		export default {
 			// [VUE] Component name
-			name: 'CreateView',
+			name: 'SingleView',
 
 			/*
 				[VUE] Components => https://bit.ly/3GdqmXg
 				Used to inject children components
 			*/
-				components: { ImageBase, FormBase },
+				components: { ImageBase },
 			//
 
 			/*
@@ -49,7 +48,10 @@
 				Used to inject data in the Vue.js component
 			*/
 				data(){
-					return {}
+					return {
+						// Get route params (Vue.js way)
+						cmpRouteParams: this.$route.params,
+					}
 				},
 			//
 

@@ -12,21 +12,26 @@
                                 @click: bind event on HTML tag
                             -->
                             <button
-                                v-text="`Home`"
+                                v-text="`Acceuil`"
                                 @click="$router.push( { name: 'HomeView' } )"
                             />
                         </li>
                         <li>
                             <button
-                                v-text="`Single`"
-                                @click="$router.push( { name: 'SingleView', params: { type: `post`, id: 2 } } )"
+                                v-text="`Connexion/Inscription`"
+                                @click="$router.push( { name: 'LoginView' })"
                             />
                         </li>
 						<li>
                             <button
-                                v-text="`Create`"
-                                @click="$router.push( { name: 'CreateView' } )"
+                                v-text="`Vos favoris`"
+                                @click="$router.push( { name: 'FavorisView' } )"
                             />
+                        </li>
+						<li>
+                            <button
+                                v-text="`Rechercher`"
+                                @click="$router.push( { name: 'SearchView', params: { name: `spiderman`} } )" />
                         </li>
                     </ul>
                 </li>

@@ -1,10 +1,10 @@
 <template>
 	<div 
-		class="single-view-component"
+		class="create-view-component"
 	>
-		<p>single-view-component</p>
-		{{ cmpRouteParams }}
+		<p>RECHERCHE VIEW</p>
 		<ImageBase />
+		<FormBase />
 	</div>
 </template>
 
@@ -18,6 +18,7 @@
 		Define main imports to create the application
 	*/
     	import ImageBase from '../components/base/ImageBase.vue';
+		import FormBase from "../components/base/FormBase.vue";
 	//
 
 	/*
@@ -26,13 +27,13 @@
 	*/
 		export default {
 			// [VUE] Component name
-			name: 'SingleView',
+			name: 'CreateView',
 
 			/*
 				[VUE] Components => https://bit.ly/3GdqmXg
 				Used to inject children components
 			*/
-				components: { ImageBase },
+				components: { ImageBase, FormBase },
 			//
 
 			/*
@@ -48,10 +49,7 @@
 				Used to inject data in the Vue.js component
 			*/
 				data(){
-					return {
-						// Get route params (Vue.js way)
-						cmpRouteParams: this.$route.params,
-					}
+					return {}
 				},
 			//
 
